@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="col-12">
+  <div id="home" class="col-12 d-flex justify-content-center align-items-center">
     <CardPerfilC/>
   </div>
 </template> 
