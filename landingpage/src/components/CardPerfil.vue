@@ -1,5 +1,5 @@
 <template>
-    <div class="card p-2 container" style="width: 350px; color: #DFDFDF;">
+    <div class="card p-2 container brightness" style="width: 350px; color: #DFDFDF;">
         <div class="img-div rounded-circle d-flex justify-content-center align-items-start m-1">
             <img src="../assets/perfil.png" class="card-img-top " id="self-photo" alt="...">
         </div>
@@ -24,9 +24,6 @@ export default {
 <style scoped>
     h1, h2, h3, h4, h5, h6, p{
         color: black;
-    }
-    .container{
-        box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.485);
     }
     .icon{
         font-size: 50px;

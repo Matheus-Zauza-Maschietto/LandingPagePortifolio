@@ -1,0 +1,105 @@
+<template>
+  <div id="habilidades" class="text-center">
+    <h2 class="m-4">Habilidades</h2>
+    <div class="row justify-content-around m-1">
+        <div class="col-lg-6">
+            <h3 class="m-4">Hard Skills</h3>
+            <ul class="p-4 rounded-3 hard-skills">
+                <li>
+                    <h4>Python</h4>
+                    <ProgressBar loading="75" type="bg-warning" height="20px" width="400px"/>
+                    <span>Certificações</span>
+                </li>
+                <li>
+                    <h4>.Net/C#</h4>
+                    <ProgressBar loading="80" type="bg-warning" height="20px" width="400px"/>
+                    <span>Certificações</span>
+                </li>
+                <li>
+                    <h4>Vue.Js</h4>
+                    <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
+                    <span>Certificações</span>
+                </li>
+                <li>
+                    <h4>Html - Css - JavaScript</h4>
+                    <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
+                    <span>Certificações</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <h3 class="m-4">Soft Skills</h3>
+            <ul class="p-4 rounded-3 soft-skills">
+                <li>
+                    <h4>Lógica</h4>
+                    <ProgressBar loading="90" type="bg-success" height="20px" width="400px"/>
+                </li>
+                <li>
+                    <h4>Resolução de problemas</h4>
+                    <ProgressBar loading="80" type="bg-success" height="20px" width="400px"/>
+                </li>
+                <li>
+                    <h4>Cooperação</h4>
+                    <ProgressBar loading="75" type="bg-success" height="20px" width="400px"/>
+                </li>
+                <li>
+                    <h4>Criatividade</h4>
+                    <ProgressBar loading="85" type="bg-success" height="20px" width="400px"/>
+                </li>
+                <li>
+                    <h4>Liderança</h4>
+                    <ProgressBar loading="70" type="bg-success" height="20px" width="400px"/>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import ProgressBar from "./ProgressBar.vue"   
+
+export default {
+    name: "HabilidadesC",
+    components: { 
+        ProgressBar
+    }
+}
+</script>
+
+<style scoped>
+#habilidades{
+    color: white;
+    font-size: 20px;
+}
+
+.soft-skills > li{
+    padding: 11px;
+}
+
+.hard-skills > li{
+    padding: 5px;
+}
+
+ul{
+    border: 3px solid #3A3A3A;
+}
+
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+span{
+    font-size: 16px;
+}
+</style>

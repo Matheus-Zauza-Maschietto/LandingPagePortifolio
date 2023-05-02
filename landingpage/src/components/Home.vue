@@ -16,6 +16,10 @@ export default {
 <style>
 #home{
     background: #000;
-    height: 100vh;
+    background-image: url(../assets/programming.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 </style>
