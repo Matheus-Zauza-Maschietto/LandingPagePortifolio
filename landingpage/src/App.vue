@@ -2,8 +2,11 @@
   <div id="root">
     <HeaderC/>
     <HomeC/>
+    <hr>
     <SobreC/>
+    <hr>
     <HabilidadesC/>
+    <hr>
   </div>
 </template>
 
@@ -40,5 +43,12 @@ export default {
 
 ul{
   list-style: none;
+}
+
+hr{
+  color: white;
+  background: white;
+  height: 5px;
+  margin: 0!important;
 }
 </style>

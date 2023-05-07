@@ -1,11 +1,11 @@
 <template>
   <div id="sobre">
-        <div class="col-md-10 text-center m-2 p-3 brightness rounded-2 mx-auto" id="meu-resumo">
+        <div class="col-md-10 text-center m-2 p-3 rounded-2 mx-auto" id="meu-resumo">
             <h2>Sobre</h2>
             <p class="p-4">Natural de Loanda, Pr sempre tive muita afinidade com a matemática, lógica e criatividade. Comecei meus estudos em programação como hobby, porem com o passar do tempo entendi que gostaria de ter isso como algo além de um hobby, percebi que gostaria de fazer isso como minha profissão. Gosto de xadrez, leitura e sou um amante de ciência/astronomia</p>
         </div>
         <div class="row justify-content-around m-2 info-cards">
-            <div class="col-lg-5 text-center m-5 p-4 rounded-3">
+            <div class="col-lg-5 text-center m-5 p-4 rounded-3 brightness">
                 <h3>Detalhes Pessoais</h3>
                 <div class="col-9 m-auto">
                     <div class="d-flex justify-content-between ">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 d-flex flex-column text-center m-5 p-4 rounded-3">
+            <div class="col-lg-5 d-flex flex-column text-center m-5 p-4 rounded-3 brightness">
                 <h3>Trilha Percorrida</h3>
                 <span>Inicio dos estudos em Programação: 2020</span>
                 <span>Ensino Médio (Concluido): 2021</span>
@@ -73,6 +73,7 @@ h3{
 
 .info-cards>div{
     border: 3px solid #3A3A3A;
+    background: #1E1E1E;
     font-size: 18px;
 }
 .info-cards>div h3{

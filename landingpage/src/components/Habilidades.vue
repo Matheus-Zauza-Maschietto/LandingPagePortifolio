@@ -8,22 +8,22 @@
                 <li>
                     <h4>Python</h4>
                     <ProgressBar loading="75" type="bg-warning" height="20px" width="400px"/>
-                    <span>Certificações</span>
+                    <Certificacoes/>
                 </li>
                 <li>
                     <h4>.Net/C#</h4>
                     <ProgressBar loading="80" type="bg-warning" height="20px" width="400px"/>
-                    <span>Certificações</span>
+                    <Certificacoes/>
                 </li>
                 <li>
                     <h4>Vue.Js</h4>
                     <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
-                    <span>Certificações</span>
+                    <Certificacoes/>
                 </li>
                 <li>
                     <h4>Html - Css - JavaScript</h4>
                     <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
-                    <span>Certificações</span>
+                    <Certificacoes/>
                 </li>
             </ul>
         </div>
@@ -59,11 +59,13 @@
 
 <script>
 import ProgressBar from "./ProgressBar.vue"   
+import Certificacoes from "./Certificacoes.vue";
 
 export default {
     name: "HabilidadesC",
     components: { 
-        ProgressBar
+        ProgressBar,
+        Certificacoes
     }
 }
 </script>

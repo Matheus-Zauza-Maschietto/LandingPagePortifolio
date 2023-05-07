@@ -1,7 +1,7 @@
 <template>
     <div class="card p-2 container brightness" style="width: 350px; color: #DFDFDF;">
-        <div class="img-div rounded-circle d-flex justify-content-center align-items-start m-1">
-            <img src="../assets/perfil.png" class="card-img-top " id="self-photo" alt="...">
+        <div class="img-div rounded-circle d-flex justify-content-center align-items-end m-1">
+            <img src="../assets/myPhoto2.png" class="" id="self-photo" alt="...">
         </div>
         <div class="card-body ">
             <h5 class="card-title">Matheus Zauza Maschietto</h5>
