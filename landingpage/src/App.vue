@@ -7,6 +7,7 @@
     <hr>
     <HabilidadesC/>
     <hr>
+    <ProjetosC/>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import HeaderC from "./components/Header.vue"
 import HomeC from "./components/Home.vue"
 import SobreC from "./components/Sobre.vue";
 import HabilidadesC from "./components/Habilidades.vue"
+import ProjetosC from "./components/Projetos.vue"
 
 export default {
   name: 'App',
@@ -22,7 +24,8 @@ export default {
     HeaderC,
     HomeC,
     SobreC,
-    HabilidadesC
+    HabilidadesC,
+    ProjetosC
   }
 }
 </script>

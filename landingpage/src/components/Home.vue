@@ -16,7 +16,7 @@ export default {
 <style>
 #home{
     background: #000;
-    background-image: url(../assets/programming.jpg);
+    background-image: url(../assets/myPhotos/programming.jpg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
