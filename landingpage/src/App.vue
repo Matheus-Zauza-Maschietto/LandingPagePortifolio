@@ -35,7 +35,7 @@ export default {
   background: #1E1E1E;
 }
 
-#home, #sobre, #habilidades{
+#home, #sobre, #habilidades, #projetos{
   min-height: 100vh;
   padding-top: 80px;
 }
