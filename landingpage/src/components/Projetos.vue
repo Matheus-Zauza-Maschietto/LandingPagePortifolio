@@ -147,7 +147,7 @@ export default {
         font-size: 24px;
     }
     .board{
-        border: 4px solid rgba(255, 255, 255, 0.2);
+        border: 3px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         height: 450px;
     }
