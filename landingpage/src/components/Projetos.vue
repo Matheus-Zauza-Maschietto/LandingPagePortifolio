@@ -131,5 +131,8 @@ export default {
     h2, h3, span{
         color: white;
     }
+    h3{
+        font-size: 24px;
+    }
 
 </style>
