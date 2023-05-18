@@ -9,8 +9,8 @@
 </div> -->
   <div class="text-center" id="projetos">
     <h2>Meus Projetos</h2>
-    <div class="container row row-cols-2 m-auto">
-        <div class="board col-md-5 m-5 brightness">
+    <div class="container row row-cols-md-2 m-auto">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>I Want</h3>
                 <img src="../assets/projetos/IWant.png" alt="API de produtos" class="img-fluid">
@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="board col-md-5 m-5 brightness">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>Filmaria</h3>
                 <img src="../assets/projetos/filmaria.png" alt="Site de lançamento de filmes" class="img-fluid">
@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div class="board col-md-5 m-5 brightness">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>Me Acha</h3>
                 <img src="../assets/projetos/MeAcha.png" alt="Site busca de CEPs" class="img-fluid">
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="board col-md-5 m-5 brightness">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>My Clouth Stock</h3>
                 <img src="../assets/projetos/myClouthStock.png" alt="Site para controle de estoque de roupas" class="img-fluid">
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="board col-md-5 m-5 brightness">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>Controle de Pedidos</h3>
                 <img src="../assets/projetos/controleDePedidos.png" alt="Site para controle de estoque de items" class="img-fluid">
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </div>
-        <div class="board col-md-5 m-5 brightness">
+        <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>Downloader de Video do Youtube</h3>
                 <img src="../assets/projetos/youtubeDownloader.png" alt="Aplicativo desktop para baixar videos e audios do youtube" class="img-fluid">
