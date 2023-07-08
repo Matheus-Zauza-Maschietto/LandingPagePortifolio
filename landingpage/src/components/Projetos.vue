@@ -59,7 +59,7 @@
                     <img src="../assets/logos/front.png" alt="logo html css e javascript" class="icon-img">
                 </div>
             </div>
-        </div>
+        </div>""
         <div class="board col-md-5 m-md-5 brightness">
             <div class="col-md-10 col-11 m-auto projeto">
                 <h3>Downloader de Video do Youtube</h3>
@@ -70,13 +70,22 @@
                 </div>
             </div>
         </div>
+        <cardProjeto/>
+        <cardProjeto/>
+        <cardProjeto/>
+        <cardProjeto/>
     </div>
   </div>
 </template>
 
 <script>
+import cardProjeto from './cardProjeto.vue'
+
 export default {
     name: "ProjetosC",
+    components: {
+        cardProjeto
+    },
     data(){
         return{
             projetos: [
@@ -157,6 +166,6 @@ export default {
     }
 
     .brightness{
-    box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
     }
 </style>
