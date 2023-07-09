@@ -1,32 +1,32 @@
 <template>
   <div id="sobre">
-        <div class="col-md-11 text-center p-3 rounded-2 m-auto" id="meu-resumo">
-            <h2>Sobre</h2>
-            <p class="p-4">Natural de Loanda, Pr sempre tive muita afinidade com a matemática, lógica e criatividade. Comecei meus estudos em programação como hobby, porem com o passar do tempo entendi que gostaria de ter isso como algo além de um hobby, percebi que gostaria de fazer isso como minha profissão. Gosto de xadrez, leitura e sou um amante de ciência/astronomia</p>
+        <div class="col-md-11 p-3 rounded-2 m-md-auto m-2" id="meu-resumo">
+            <h2 class="text-center">Sobre</h2>
+            <p class="p-4 text-justify">Natural de Loanda, Pr sempre tive muita afinidade com a matemática, lógica e criatividade. Comecei meus estudos em programação como hobby, porem com o passar do tempo entendi que gostaria de ter isso como algo além de um hobby, percebi que gostaria de fazer isso como minha profissão. Gosto de xadrez, leitura e sou um amante de ciência/astronomia</p>
         </div>
         <div class="row justify-content-around m-2 info-cards">
             <div class="col-lg-5 text-center m-5 p-4 rounded-3 brightness">
                 <h3>Detalhes Pessoais</h3>
-                <div class="col-9 m-auto d-flex flex-column justify-content-evenly h-100">
+                <div class="col-lg-9 col-12 m-auto d-flex flex-column justify-content-evenly h-100">
                     <div class="d-flex justify-content-between information">
                         <h3>Nome</h3>
-                        <span>Matheus Zauza Maschietto</span>
+                        <span class="w-auto text-end">Matheus Zauza Maschietto</span>
                     </div>
                     <div class="d-flex justify-content-between information">
                         <h3>E-mail</h3>
-                        <span>matheus_maschietto@yahoo.com.br</span>
+                        <span class="w-auto text-end">matheus_maschietto@yahoo.com.br</span>
                     </div>
                     <div class="d-flex justify-content-between information">
                         <h3>Experiência</h3>
-                        <span>3 Anos</span>
+                        <span class="w-auto text-end">3 Anos</span>
                     </div>
                     <div class="d-flex justify-content-between information">
                         <h3>Endereço</h3>
-                        <span>Maringá, PR</span>
+                        <span class="w-auto text-end">Maringá, PR</span>
                     </div>
                     <div class="d-flex justify-content-between information">
                         <h3>Idade</h3>
-                        <span>19 Anos</span>
+                        <span class="w-auto text-end">19 Anos</span>
                     </div>
                 </div>
             </div>
@@ -112,6 +112,10 @@ p{
     margin: auto;
 }
 
+.information{
+    flex-wrap: wrap;
+}
+
 .brightness>p, .information{
     transition: 0.3s;
     padding: 5px;
@@ -119,5 +123,9 @@ p{
 
 .brightness>p:hover, .information:hover{
     transform: scale(1.1);
+}
+
+.text-justify{
+    text-align: justify;
 }
 </style>
