@@ -2,13 +2,12 @@
     <div class="board col-md-5 m-md-5 brightness">
         <div class="col-md-10 col-11 m-auto projeto">
             <h3>Controle de Pedidos</h3>
-            <div class="col-11 img-fluid" :style="{backgroundImage: '../assets/projetos/controleDePedidos.png'}">
+            <!-- <div class="col-11 img-fluid" :style="{'background-image': require(`@/assets/projetos/${capaImgPath}`)}"/> -->
 
-            </div>
-            <!-- <img src="../assets/projetos/controleDePedidos.png" alt="Site para controle de estoque de items" class=""> -->
+            <img :src="require(`@/assets/projetos/${capaImgPath}`)" class="col-11 img-fluid" alt="">
             <span>Tecnologias Usadas</span>
             <div class="d-flex justify-content-center">
-                <img src="../assets/logos/front.png" alt="logo html css e javascript" class="icon-img">
+                <img v-for="(img, index) in tecImgPath" :key="index" :src="require(`@/assets/logos/${img}`)" class="icon-img">
             </div>
         </div>
     </div>
@@ -17,7 +16,20 @@
 <script>
 export default {
     name: "cardPerfil",
-    props: ['infos']
+    props: {
+        titulo: {
+            type: String,
+            required: true
+        },
+        capaImgPath: {
+            type: String,
+            required: true
+        },
+        tecImgPath: {
+            type: Array,
+            required: true
+        }
+    }
 }
 </script>
 

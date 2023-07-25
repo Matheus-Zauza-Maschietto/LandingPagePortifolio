@@ -7,7 +7,8 @@
         <img :src="tecnologia.imgPath" :alt="tecnologia.imgAlt" class="icon-img">
     </div>
 </div> -->
-  <div class="text-center" id="projetos">
+
+  <!-- <div class="text-center" id="projetos">
     <h2>Meus Projetos</h2>
     <div class="container row row-cols-md-2 m-auto">
         <div class="board col-md-5 m-md-5 brightness">
@@ -69,13 +70,16 @@
                     <img src="../assets/logos/python.png" alt="logo python" class="icon-img">
                 </div>
             </div>
+        </div> -->
+
+    <!-- </div> -->
+  <!-- </div> -->
+        <div class="text-center" id="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="container row row-cols-md-2 m-auto">
+                <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath"/>
+            </div>
         </div>
-        <cardProjeto/>
-        <cardProjeto/>
-        <cardProjeto/>
-        <cardProjeto/>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -91,50 +95,50 @@ export default {
             projetos: [
                 {
                     titulo: "I Want",
-                    imgPath: "../assets/projetos/IWant.png",
+                    capaImgPath: "IWant.png",
                     imgAlt: "API de produtos",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/cSharp.png", imgAlt: "logo CSharp"}
+                    tecImgPath: [
+                        "python.png"
                     ]
                 },
                 {
                     titulo: "Filmaria",
-                    imgPath: "../assets/projetos/filmaria.png",
+                    capaImgPath: "filmaria.png",
                     imgAlt: "Site de lançamento de filmes",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/vue.png", imgAlt: "logo vue.js"}
+                    tecImgPath: [
+                        "vue.png"
                     ]
                 },
                 {
                     titulo: "Me Acha",
-                    imgPath: "../assets/projetos/MeAcha.png",
+                    capaImgPath: "MeAcha.png",
                     imgAlt: "Site busca de CEPs",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/front.png", imgAlt: "logo html css e javascript"}
+                    tecImgPath: [
+                        "front.png"
                     ]
                 },
                 {
                     titulo: "My Clouth Stock",
-                    imgPath: "../assets/projetos/myClouthStock.png",
+                    capaImgPath: "myClouthStock.png",
                     imgAlt: "Site para controle de estoque de roupas",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/python.png", imgAlt: "logo python"}
+                    tecImgPath: [
+                        "python.png"
                     ]
                 },
                 {
                     titulo: "Controle de Pedidos",
-                    imgPath: "../assets/projetos/controleDePedidos.png",
+                    capaImgPath: "controleDePedidos.png",
                     imgAlt: "Site para controle de estoque de items",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/front.png", imgAlt: "logo html css e javascript"}
+                    tecImgPath: [
+                        "front.png"
                     ]
                 },
                 {
                     titulo: "Downloader de Video do Youtube",
-                    imgPath: "../assets/projetos/youtubeDownloader.png",
+                    capaImgPath: "youtubeDownloader.png",
                     imgAlt: "Site para baixar videos e audios do youtube",
-                    tecnologias: [
-                        {imgPath: "../assets/logos/python.png", imgAlt: "logo python"}
+                    tecImgPath: [
+                        "python.png"
                     ]
                 },
         
