@@ -1,7 +1,7 @@
 <template>
-    <div class="card text-center p-2 container brightness" style="width: 350px; color: #DFDFDF;">
-        <div class="img-div rounded-circle d-flex justify-content-center align-items-end col-12">
-            <img src="../assets/myPhotos/myPhoto2.png" class="img-fluid" id="self-photo" alt="...">
+    <div class="card text-center p-2 container brightness" style="width: 350px; color: rgb(222, 222, 222);">
+        <div class="img-div rounded-circle d-flex justify-content-center align-items-end h-auto ratio ratio-1x1">
+            <img src="../assets/myPhotos/myPhotoC.png" class="img-fluid p-5 mt-5" alt="...">
         </div>
         <div class="card-body ">
             <h5 class="card-title">Matheus Zauza Maschietto</h5>
@@ -39,13 +39,8 @@ export default{
     }
 
     .img-div{
-        height: 320px;
         overflow: hidden;
         background: #000;
-    }
-
-    #self-photo{
-        width: 70%;
     }
 
 </style>
