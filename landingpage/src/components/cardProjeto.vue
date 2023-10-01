@@ -1,5 +1,5 @@
 <template>
-    <div class="board brightness col-md-10 col-11 m-auto projeto">
+    <div class="board brightness projeto m-4">
             <div class="capa col-12 h-75">
                 <h3 class="m-1">{{titulo}}</h3>
                 <img :src="require(`@/assets/projetos/${capaImgPath}`)" class="col-11 img-fluid" alt="">
@@ -37,8 +37,8 @@ export default {
 
 <style scoped>
     .icon-img{
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
     }
     
     h2, h3, span{
@@ -50,7 +50,6 @@ export default {
     .board{
         border: 3px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
-        
     }
 
     .capa{

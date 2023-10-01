@@ -49,7 +49,7 @@ export default {
                     capaImgPath: "myClouthStock.png",
                     imgAlt: "Site para controle de estoque de roupas",
                     tecImgPath: [
-                        "python.png"
+                        "pythonC.png"
                     ]
                 },
                 {
@@ -67,7 +67,7 @@ export default {
                     capaImgPath: "youtubeDownloader.png",
                     imgAlt: "Site para baixar videos e audios do youtube",
                     tecImgPath: [
-                        "python.png"
+                        "pythonC.png"
                     ]
                 },
                 {
@@ -75,7 +75,7 @@ export default {
                     capaImgPath: "controleDeEstacionamento.png",
                     imgAlt: "Aplicativo desktop para gerênciar o estacionamento",
                     tecImgPath: [
-                        "python.png"
+                        "pythonC.png"
                     ]
                 },
                 {
