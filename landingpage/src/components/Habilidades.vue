@@ -5,55 +5,55 @@
         <div class="col-lg-6">
             <h3 class="m-4">Hard Skills</h3>
             <div class="skills p-4 rounded-3">
-                <ul class="hard-skills">
-                <li>
-                    <h4>Python</h4>
-                    <ProgressBar loading="75" type="bg-warning" height="20px" width="400px"/>
-                    <Certificacoes/>
-                </li>
-                <li>
-                    <h4>.Net/C#</h4>
-                    <ProgressBar loading="80" type="bg-warning" height="20px" width="400px"/>
-                    <Certificacoes/>
-                </li>
-                <li>
-                    <h4>Vue.Js</h4>
-                    <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
-                    <Certificacoes/>
-                </li>
-                <li>
-                    <h4>Html - Css - JavaScript</h4>
-                    <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
-                    <Certificacoes/>
-                </li>
-            </ul>
+                <ul class="hard-skills p-0">
+                    <li>
+                        <h4>Python</h4>
+                        <ProgressBar loading="75" type="bg-warning" height="20px" width="400px"/>
+                        <Certificacoes/>
+                    </li>
+                    <li>
+                        <h4>.Net/C#</h4>
+                        <ProgressBar loading="80" type="bg-warning" height="20px" width="400px"/>
+                        <Certificacoes/>
+                    </li>
+                    <li>
+                        <h4>Vue.Js</h4>
+                        <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
+                        <Certificacoes/>
+                    </li>
+                    <li>
+                        <h4>Html - Css - JavaScript</h4>
+                        <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
+                        <Certificacoes/>
+                    </li>
+                </ul>   
             </div>
         </div>
         <div class="col-lg-6">
             <h3 class="m-4">Soft Skills</h3>
-            <div class="skills p-4 rounded-3">
-                <ul class="soft-skills">
-                <li>
-                    <h4>Lógica</h4>
-                    <ProgressBar loading="90" type="bg-success" height="20px" width="400px"/>
-                </li>
-                <li>
-                    <h4>Resolução de problemas</h4>
-                    <ProgressBar loading="80" type="bg-success" height="20px" width="400px"/>
-                </li>
-                <li>
-                    <h4>Cooperação</h4>
-                    <ProgressBar loading="75" type="bg-success" height="20px" width="400px"/>
-                </li>
-                <li>
-                    <h4>Criatividade</h4>
-                    <ProgressBar loading="85" type="bg-success" height="20px" width="400px"/>
-                </li>
-                <li>
-                    <h4>Liderança</h4>
-                    <ProgressBar loading="70" type="bg-success" height="20px" width="400px"/>
-                </li>
-            </ul>
+            <div class="skills p-4 rounded-3 col-12">
+                <ul class="soft-skills p-0">
+                    <li>
+                        <h4>Lógica</h4>
+                        <ProgressBar loading="90" type="bg-success" height="20px" width="400px"/>
+                    </li>
+                    <li>
+                        <h4>Resolução de problemas</h4>
+                        <ProgressBar loading="80" type="bg-success" height="20px" width="400px"/>
+                    </li>
+                    <li>
+                        <h4>Cooperação</h4>
+                        <ProgressBar loading="75" type="bg-success" height="20px" width="400px"/>
+                    </li>
+                    <li>
+                        <h4>Criatividade</h4>
+                        <ProgressBar loading="85" type="bg-success" height="20px" width="400px"/>
+                    </li>
+                    <li>
+                        <h4>Liderança</h4>
+                        <ProgressBar loading="70" type="bg-success" height="20px" width="400px"/>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
