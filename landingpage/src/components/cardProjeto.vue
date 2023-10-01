@@ -1,15 +1,17 @@
 <template>
-    <div class="board col-md-5 m-md-5 brightness">
-        <div class="col-md-10 col-11 m-auto projeto">
-            <h3>Controle de Pedidos</h3>
-            <!-- <div class="col-11 img-fluid" :style="{'background-image': require(`@/assets/projetos/${capaImgPath}`)}"/> -->
-
-            <img :src="require(`@/assets/projetos/${capaImgPath}`)" class="col-11 img-fluid" alt="">
-            <span>Tecnologias Usadas</span>
-            <div class="d-flex justify-content-center">
-                <img v-for="(img, index) in tecImgPath" :key="index" :src="require(`@/assets/logos/${img}`)" class="icon-img">
+    <div class="board brightness col-md-10 col-11 m-auto projeto">
+            <div class="capa col-12 h-75">
+                <h3 class="m-1">{{titulo}}</h3>
+                <img :src="require(`@/assets/projetos/${capaImgPath}`)" class="col-11 img-fluid" alt="">
             </div>
-        </div>
+            <div class="desc col-12 h-25">
+                <span>Tecnologias Usadas</span>
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <img v-for="(img, index) in tecImgPath" :key="index" :src="require(`@/assets/logos/${img}`)" class="icon-img m-2">
+                    </div>
+                </div>
+            </div>
     </div>
 </template>
 
@@ -35,7 +37,8 @@ export default {
 
 <style scoped>
     .icon-img{
-        width: 70px;
+        width: 60px;
+        height: 60px;
     }
     
     h2, h3, span{
@@ -47,11 +50,16 @@ export default {
     .board{
         border: 3px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
-        height: 450px;
+        
+    }
+
+    .capa{
+        overflow: hidden;
     }
 
     img{
-        max-height: 340px;
+        height: auto; 
+        width: 100%;
     }
 
     .brightness{

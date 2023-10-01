@@ -8,9 +8,13 @@
             <p class="card-text">Desenvolvedor FullStack</p>
         </div>
         <div>
-            <i class="fa-brands fa-linkedin"></i>
-            <font-awesome-icon icon="fa-brands fa-linkedin" class="icon p-3"/>
-            <font-awesome-icon icon="fa-brands fa-github" class="icon p-3"/>
+            <a href="https://www.linkedin.com/in/matheus-maschietto-ab9540215/" rel="author" target="_blank">
+                <font-awesome-icon icon="fa-brands fa-linkedin" class="icon p-3"/>
+            </a>
+            <a href="https://github.com/Matheus-Zauza-Maschietto" rel="author" target="_blank"> 
+                <font-awesome-icon icon="fa-brands fa-github" class="icon p-3"/>
+            </a>
+            
         </div>
     </div>
 </template>
