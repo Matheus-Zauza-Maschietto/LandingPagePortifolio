@@ -47,6 +47,8 @@
                 <p>Programador Junior: Março, 2023</p>
                 <span class="init-jorney-stick"></span>
                 <p>Hackathon InovaAgro 3° lugar: maio, 2023</p>
+                <span class="init-jorney-stick"></span>
+                <p>Desafio Inovação Ploomes 1° Lugar: março, 2024</p>
             </div>
         </div>
   </div>

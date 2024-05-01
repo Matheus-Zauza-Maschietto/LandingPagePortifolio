@@ -21,9 +21,35 @@ export default {
                 {
                     titulo: "I Want",
                     capaImgPath: "IWant.png",
-                    imgAlt: "API de produtos",
+                    imgAlt: "API com sistema de autenticação OAuth 2 desenvolvida em C# para cadastro de produtos",
                     tecImgPath: [
                         "cSharpC.png"
+                    ]
+                },
+                {
+                    titulo: "Food Place",
+                    capaImgPath: "FoodPlace.png",
+                    imgAlt: "Sistema de gerenciamento de pedidos para restaurantes desenvolvido em C# com banco de dados SQL Server, OAuth 2 e API RESTful",
+                    tecImgPath: [
+                        "cSharpC.png"
+                    ]
+                },
+                {
+                    titulo: "Auto Mapeamento (Ganhador do desafio de inovação Ploomes 2024)",
+                    capaImgPath: "AutoMapeamento.png",
+                    imgAlt: "Sistema para mapeamento de rotas de Web APIs para pattern de excel. Desenvolvido com C# e Vue.js",
+                    tecImgPath: [
+                        "cSharpC.png",
+                        "vueC.png"
+                    ]
+                },
+                {
+                    titulo: "Gerênciador de Tarefas",
+                    capaImgPath: "gerenciadorDeTarefas.png",
+                    imgAlt: "API RESTful para gerenciamento de tarefas desenvolvida em node utilizando express, typeorm e Header Auth para autenticação",
+                    tecImgPath: [
+                        "node.jpg",
+                        "dockerlogo.png"
                     ]
                 },
                 {
@@ -82,6 +108,14 @@ export default {
                     titulo: "Rede Social para Programador",
                     capaImgPath: "redeSocial.png",
                     imgAlt: "Rede social com funcionalidades basicas para posts",
+                    tecImgPath: [
+                        "vueC.png"
+                    ]
+                },
+                {
+                    titulo: "Maringá Frotas",
+                    capaImgPath: "MaringaFrotas.png",
+                    imgAlt: "Sistema web para gestão de frota de veiculos",
                     tecImgPath: [
                         "vueC.png"
                     ]
