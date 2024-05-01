@@ -7,23 +7,23 @@
             <div class="skills p-4 rounded-3">
                 <ul class="hard-skills p-0">
                     <li>
-                        <h4>Python</h4>
-                        <ProgressBar loading="75" type="bg-warning" height="20px" width="400px"/>
-                        <Certificacoes/>
-                    </li>
-                    <li>
                         <h4>.Net/C#</h4>
-                        <ProgressBar loading="80" type="bg-warning" height="20px" width="400px"/>
+                        <ProgressBar loading="90" type="bg-warning" height="20px" width="400px"/>
                         <Certificacoes/>
                     </li>
                     <li>
                         <h4>Vue.Js</h4>
+                        <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
+                        <Certificacoes/>
+                    </li>
+                    <li>
+                        <h4>Node</h4>
                         <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
                         <Certificacoes/>
                     </li>
                     <li>
-                        <h4>Html - Css - JavaScript</h4>
-                        <ProgressBar loading="70" type="bg-warning" height="20px" width="400px"/>
+                        <h4>Docker/Kubernetes</h4>
+                        <ProgressBar loading="60" type="bg-warning" height="20px" width="400px"/>
                         <Certificacoes/>
                     </li>
                 </ul>   
