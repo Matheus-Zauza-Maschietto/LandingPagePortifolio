@@ -5,7 +5,7 @@
             <p class="p-4 text-justify">Natural de Loanda (PR), sempre tive muita afinidade com a matemática, lógica e criatividade. Comecei meus estudos em programação como hobby, porem com o passar do tempo entendi que gostaria de ter isso como minha profissão. Atualmente trabalho desenvolvendo integrações em APIs, e banco dados, utilizando Dotnet. Gosto de xadrez, leitura e sou um estusiasta de ciência/astronomia</p>
         </div>
         <div class="row justify-content-around m-2 info-cards">
-            <div class="col-lg-5 text-center m-md-5 p-md-4 p-2 mx-auto my-3 py-4 rounded-3 brightness">
+            <div class="col-lg-5 col-11 text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 py-4 rounded-3 brightness">
                 <h3>Detalhes Pessoais</h3>
                 <div class="col-lg-9 col-12 m-auto d-flex flex-column justify-content-evenly h-100">
                     <div class="d-flex justify-content-between information">
@@ -30,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 d-flex flex-column text-center m-md-5 p-md-4 p-2 mx-auto my-3 rounded-3 brightness">
+            <div class="col-lg-5 col-11 d-flex flex-column text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 rounded-3 brightness">
                 <h3>Trilha Percorrida</h3>
                 <span class="init-jorney-ball"></span>
                 <span class="init-jorney-stick"></span>
@@ -124,7 +124,7 @@ p{
 }
 
 .brightness>p:hover, .information:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .text-justify{

@@ -64,4 +64,9 @@ export default {
     .brightness{
         box-shadow: 0px 0px 25px 10px rgba(255, 255, 255, 0.1);
     }
+
+    .projeto:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+    }
 </style>

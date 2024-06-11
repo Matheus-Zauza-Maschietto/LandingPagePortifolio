@@ -1,22 +1,27 @@
 <template>
-    <a :href="link">
+    <div>
         <span>Certificações </span>
         <font-awesome-icon icon="fa-solid fa-play" class="icon"/>
-    </a>
+    </div>
+    
 </template>
 
 <script>
 export default {
     name: "CertificacoesC",
-    props: ["link"]
 }
 </script>
 
 <style scoped>
+    div:hover{
+        cursor: pointer;
+    }
+
     span{
         font-size: 16px;
     }
     .icon{
         font-size: 16px;
     }
+    
 </style>
