@@ -11,7 +11,32 @@
                             <ProgressBar loading="90" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="dotnetModalOpen = !dotnetModalOpen; stopScroll()" />
                             <ModalComponent title="Certificações .Net/C#" :open="dotnetModalOpen"
-                                @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="dotnetCertificacoes" />
+                                @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="[
+                                {
+                                    title: 'C# COMPLETO Programação Orientada a Objetos + Projetos',
+                                    time: '2023'
+                                },
+                                {
+                                    title: '.NET 6 WEB API - Do zero ao avançado',
+                                    time: '2022'
+                                },
+                                {
+                                    title: 'C# E ORIENTAÇÃO A OBJETOS',
+                                    time: '2022'
+                                },
+                                {
+                                    title: 'C#: Usando herança e implementando interfaces',
+                                    time: '2022'
+                                },
+                                {
+                                    title: 'C#: EXPLORANDO A LINGUAGEM',
+                                    time: '2022'
+                                },
+                                {
+                                    title: 'T.I Academy: C# WebAPIs',
+                                    time: '2022'
+                                },
+                            ]" />
                         </li>
                         <li>
                             <h4>Vue.Js</h4>
@@ -19,13 +44,14 @@
                             <Certificacoes @click="vueModalOpen = !vueModalOpen; stopScroll()" />
                             <ModalComponent title="Certificações Vue.Js" :open="vueModalOpen"
                                 @close="vueModalOpen = !vueModalOpen; initScroll()" :contents="[
-                                {
-                                    title: 'Certificação 1',
-                                    time: '2021'
-                                }, {
-                                    title: 'Certificação 2',
-                                    time: '2022'
-                                }
+                                    {
+                                        title: 'Curso Vue JS do zero ao avançado na pratica',
+                                        time: '2023'
+                                    },
+                                    {
+                                        title: 'T.I Academy: Vue.js',
+                                        time: '2022'
+                                    },
                             ]" />
                         </li>
                         <li>
@@ -34,13 +60,10 @@
                             <Certificacoes @click="typescriptModalOpen = !typescriptModalOpen; stopScroll()"/>
                             <ModalComponent title="Certificações Typescript" :open="typescriptModalOpen"
                                 @close="typescriptModalOpen = !typescriptModalOpen; initScroll()" :contents="[
-                                {
-                                    title: 'Certificação 1',
-                                    time: '2021'
-                                }, {
-                                    title: 'Certificação 2',
-                                    time: '2022'
-                                }
+                                    {
+                                        title: 'Desenvolvimento Autodidata',
+                                        time: '2024'
+                                    }
                             ]" />
                         </li>
                         <li>
@@ -50,11 +73,12 @@
                             <ModalComponent title="Certificações Docker/Kubernetes" :open="kubernetesModalOpen"
                                 @close="kubernetesModalOpen = !kubernetesModalOpen; initScroll()" :contents="[
                                 {
-                                    title: 'Certificação 1',
-                                    time: '2021'
-                                }, {
-                                    title: 'Certificação 2',
-                                    time: '2022'
+                                    title: 'Desenvolvimento Autodidata',
+                                    time: '2024'
+                                },
+                                {
+                                    title: 'Docker para Desenvolvedores (com Docker Swarm e Kubernetes)',
+                                    time: '2024'
                                 }
                             ]" />
                         </li>
