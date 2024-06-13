@@ -11,7 +11,14 @@
                             <ProgressBar loading="90" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="dotnetModalOpen = !dotnetModalOpen; stopScroll()" />
                             <ModalComponent title="Certificações .Net/C#" :open="dotnetModalOpen"
-                                @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="[
+                                @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="dotnetCertificacoes" />
+                        </li>
+                        <li>
+                            <h4>Vue.Js</h4>
+                            <ProgressBar loading="70" type="bg-warning" height="20px" width="400px" />
+                            <Certificacoes @click="vueModalOpen = !vueModalOpen; stopScroll()" />
+                            <ModalComponent title="Certificações Vue.Js" :open="vueModalOpen"
+                                @close="vueModalOpen = !vueModalOpen; initScroll()" :contents="[
                                 {
                                     title: 'Certificação 1',
                                     time: '2021'
@@ -22,19 +29,34 @@
                             ]" />
                         </li>
                         <li>
-                            <h4>Vue.Js</h4>
-                            <ProgressBar loading="70" type="bg-warning" height="20px" width="400px" />
-                            <Certificacoes />
-                        </li>
-                        <li>
-                            <h4>Node</h4>
+                            <h4>Node.js</h4>
                             <ProgressBar loading="60" type="bg-warning" height="20px" width="400px" />
-                            <Certificacoes />
+                            <Certificacoes @click="typescriptModalOpen = !typescriptModalOpen; stopScroll()"/>
+                            <ModalComponent title="Certificações Typescript" :open="typescriptModalOpen"
+                                @close="typescriptModalOpen = !typescriptModalOpen; initScroll()" :contents="[
+                                {
+                                    title: 'Certificação 1',
+                                    time: '2021'
+                                }, {
+                                    title: 'Certificação 2',
+                                    time: '2022'
+                                }
+                            ]" />
                         </li>
                         <li>
                             <h4>Docker/Kubernetes</h4>
                             <ProgressBar loading="60" type="bg-warning" height="20px" width="400px" />
-                            <Certificacoes />
+                            <Certificacoes @click="kubernetesModalOpen = !kubernetesModalOpen; stopScroll()"/>
+                            <ModalComponent title="Certificações Docker/Kubernetes" :open="kubernetesModalOpen"
+                                @close="kubernetesModalOpen = !kubernetesModalOpen; initScroll()" :contents="[
+                                {
+                                    title: 'Certificação 1',
+                                    time: '2021'
+                                }, {
+                                    title: 'Certificação 2',
+                                    time: '2022'
+                                }
+                            ]" />
                         </li>
                     </ul>
                 </div>
@@ -85,6 +107,9 @@ export default {
     data() {
         return {
             dotnetModalOpen: false,
+            vueModalOpen: false,
+            typescriptModalOpen: false,
+            kubernetesModalOpen: false,
             dotnetCertificacoes: [
                 {
                     title: 'Certificação 1',

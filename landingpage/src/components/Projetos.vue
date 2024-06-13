@@ -62,11 +62,29 @@ export default {
                     ]
                 },
                 {
+                    titulo: "Rede Social para Programador",
+                    capaImgPath: "redeSocial.png",
+                    imgAlt: "Rede social com funcionalidades basicas para posts",
+                    tecImgPath: [
+                        "vueC.png"
+                    ]
+                },
+                {
                     titulo: "Filmaria",
                     capaImgPath: "filmaria.png",
                     imgAlt: "Site de lançamento de filmes",
                     tecImgPath: [
                         "vueC.png"
+                    ]
+                },
+                {
+                    titulo: "Controle de Pedidos",
+                    capaImgPath: "controleDePedidos.png",
+                    imgAlt: "Site para controle de estoque de items",
+                    tecImgPath: [
+                        "HTML5.png",
+                        "CSS3.png",
+                        "JS.png"
                     ]
                 },
                 {
@@ -88,16 +106,6 @@ export default {
                     ]
                 },
                 {
-                    titulo: "Controle de Pedidos",
-                    capaImgPath: "controleDePedidos.png",
-                    imgAlt: "Site para controle de estoque de items",
-                    tecImgPath: [
-                        "HTML5.png",
-                        "CSS3.png",
-                        "JS.png"
-                    ]
-                },
-                {
                     titulo: "Downloader de Video do Youtube",
                     capaImgPath: "youtubeDownloader.png",
                     imgAlt: "Site para baixar videos e audios do youtube",
@@ -111,14 +119,6 @@ export default {
                     imgAlt: "Aplicativo desktop para gerênciar o estacionamento",
                     tecImgPath: [
                         "pythonC.png"
-                    ]
-                },
-                {
-                    titulo: "Rede Social para Programador",
-                    capaImgPath: "redeSocial.png",
-                    imgAlt: "Rede social com funcionalidades basicas para posts",
-                    tecImgPath: [
-                        "vueC.png"
                     ]
                 },
         

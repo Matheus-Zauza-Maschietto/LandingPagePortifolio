@@ -33,9 +33,16 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #navbar{
     background: white;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.18);
+}
+
+li > a {
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+    transition: color 0.4s ease-in-out;
 }
 </style>

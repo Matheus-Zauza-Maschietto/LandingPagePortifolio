@@ -50,6 +50,7 @@ export default {
     .board{
         border: 3px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
     }
 
     .capa{
@@ -66,7 +67,7 @@ export default {
     }
 
     .projeto:hover{
-        transform: scale(1.05);
-        transition: transform 0.5s ease;
+        transform: scale(1.01);
+        cursor: pointer;
     }
 </style>
