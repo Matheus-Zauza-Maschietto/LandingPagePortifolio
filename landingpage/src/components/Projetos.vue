@@ -78,6 +78,16 @@ export default {
                     ]
                 },
                 {
+                    titulo: "IBGE News",
+                    capaImgPath: "IBGEnews.png",
+                    imgAlt: "Centro de notícias do IBGE",
+                    tecImgPath: [
+                        "HTML5.png",
+                        "CSS3.png",
+                        "JS.png"
+                    ]
+                },
+                {
                     titulo: "Controle de Pedidos",
                     capaImgPath: "controleDePedidos.png",
                     imgAlt: "Site para controle de estoque de items",
