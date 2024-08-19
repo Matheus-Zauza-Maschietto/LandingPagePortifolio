@@ -49,6 +49,8 @@
                 <p>Hackathon InovaAgro 3° lugar: maio, 2023</p>
                 <span class="init-jorney-stick"></span>
                 <p>Desafio Inovação Ploomes 1° Lugar: março, 2024</p>
+                <span class="init-jorney-stick"></span>
+                <p>Programador Pleno: Agosto, 2024</p>
             </div>
         </div>
   </div>
