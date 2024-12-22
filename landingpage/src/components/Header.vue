@@ -10,16 +10,13 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
+                        <a class="nav-link" href="#sobre">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                        <a class="nav-link" href="#habilidades">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projetos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
+                        <a class="nav-link" href="#projetos">Projects</a>
                     </li>
                 </ul>
             </div>

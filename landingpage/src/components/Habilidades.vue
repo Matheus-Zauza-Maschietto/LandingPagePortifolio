@@ -1,6 +1,6 @@
 <template>
     <div id="habilidades" class="text-center">
-        <h2 class="m-4">Habilidades</h2>
+        <h2 class="m-4">Skills</h2>
         <div class="row justify-content-around m-1">
             <div class="col-lg-6">
                 <h3 class="m-4">Hard Skills</h3>
@@ -10,7 +10,7 @@
                             <h4>.Net/C#</h4>
                             <ProgressBar loading="90" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="dotnetModalOpen = !dotnetModalOpen; stopScroll()" />
-                            <ModalComponent title="Certificações .Net/C#" :open="dotnetModalOpen"
+                            <ModalComponent title="Certifications .Net/C#" :open="dotnetModalOpen"
                                 @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="[
                                 {
                                     title: 'C# COMPLETO Programação Orientada a Objetos + Projetos',
@@ -39,47 +39,51 @@
                             ]" />
                         </li>
                         <li>
-                            <h4>Vue.Js</h4>
+                            <h4>Redis</h4>
                             <ProgressBar loading="70" type="bg-warning" height="20px" width="400px" />
-                            <Certificacoes @click="vueModalOpen = !vueModalOpen; stopScroll()" />
-                            <ModalComponent title="Certificações Vue.Js" :open="vueModalOpen"
-                                @close="vueModalOpen = !vueModalOpen; initScroll()" :contents="[
+                            <Certificacoes @click="redisModalOpen = !redisModalOpen; stopScroll()" />
+                            <ModalComponent title="Certifications Redis" :open="redisModalOpen"
+                                @close="redisModalOpen = !redisModalOpen; initScroll()" :contents="[
                                     {
-                                        title: 'Curso Vue JS do zero ao avançado na pratica',
-                                        time: '2023'
-                                    },
-                                    {
-                                        title: 'T.I Academy: Vue.js',
-                                        time: '2022'
-                                    },
-                            ]" />
-                        </li>
-                        <li>
-                            <h4>Node.js</h4>
-                            <ProgressBar loading="60" type="bg-warning" height="20px" width="400px" />
-                            <Certificacoes @click="typescriptModalOpen = !typescriptModalOpen; stopScroll()"/>
-                            <ModalComponent title="Certificações Typescript" :open="typescriptModalOpen"
-                                @close="typescriptModalOpen = !typescriptModalOpen; initScroll()" :contents="[
-                                    {
-                                        title: 'Desenvolvimento Autodidata',
+                                        title: 'Self-taught Development',
                                         time: '2024'
                                     }
                             ]" />
                         </li>
                         <li>
+                            <h4>RabbitMQ</h4>
+                            <ProgressBar loading="75" type="bg-warning" height="20px" width="400px" />
+                            <Certificacoes @click="rabbitmqModalOpen = !rabbitmqModalOpen; stopScroll()"/>
+                            <ModalComponent title="Certifications Typescript" :open="rabbitmqModalOpen"
+                                @close="rabbitmqModalOpen = !rabbitmqModalOpen; initScroll()" :contents="[
+                                    {
+                                        title: 'Self-taught Development',
+                                        time: '2024'
+                                    },
+                                    {
+                                        title: 'Work Experience',
+                                        time: '2023'
+                                    },
+                            ]" />
+                        </li>
+                        <li>
                             <h4>Docker/Kubernetes</h4>
-                            <ProgressBar loading="60" type="bg-warning" height="20px" width="400px" />
+                            <ProgressBar loading="75" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="kubernetesModalOpen = !kubernetesModalOpen; stopScroll()"/>
-                            <ModalComponent title="Certificações Docker/Kubernetes" :open="kubernetesModalOpen"
+                            <ModalComponent title="Certifications Docker/Kubernetes" :open="kubernetesModalOpen"
                                 @close="kubernetesModalOpen = !kubernetesModalOpen; initScroll()" :contents="[
                                 {
-                                    title: 'Desenvolvimento Autodidata',
+                                    title: 'Self-taught Development',
                                     time: '2024'
                                 },
                                 {
                                     title: 'Docker para Desenvolvedores (com Docker Swarm e Kubernetes)',
                                     time: '2024'
-                                }
+                                },
+                                {
+                                    title: 'Work Experience',
+                                    time: '2024'
+                                },
                             ]" />
                         </li>
                     </ul>
@@ -90,23 +94,23 @@
                 <div class="skills p-4 rounded-3 col-12">
                     <ul class="soft-skills p-0">
                         <li>
-                            <h4>Lógica</h4>
+                            <h4>Logic</h4>
                             <ProgressBar loading="90" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Resolução de problemas</h4>
+                            <h4>Troubleshooting</h4>
                             <ProgressBar loading="80" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Cooperação</h4>
+                            <h4>Cooperation</h4>
                             <ProgressBar loading="75" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Criatividade</h4>
+                            <h4>Creativity</h4>
                             <ProgressBar loading="85" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Liderança</h4>
+                            <h4>Leadership</h4>
                             <ProgressBar loading="70" type="bg-success" height="20px" width="400px" />
                         </li>
                     </ul>
@@ -131,8 +135,8 @@ export default {
     data() {
         return {
             dotnetModalOpen: false,
-            vueModalOpen: false,
-            typescriptModalOpen: false,
+            redisModalOpen: false,
+            rabbitmqModalOpen: false,
             kubernetesModalOpen: false,
             dotnetCertificacoes: [
                 {

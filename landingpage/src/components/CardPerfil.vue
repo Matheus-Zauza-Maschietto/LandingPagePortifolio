@@ -5,7 +5,7 @@
         </div>
         <div class="card-body ">
             <h5 class="card-title">Matheus Zauza Maschietto</h5>
-            <p class="card-text">Desenvolvedor FullStack</p>
+            <p class="card-text">Backend Developer</p>
         </div>
         <div>
             <a href="https://www.linkedin.com/in/matheus-maschietto-ab9540215/" rel="author" target="_blank">

@@ -1,14 +1,14 @@
 <template>
         <div class="text-center" id="projetos">
-            <h2>Meus Projetos</h2>
+            <h2>My Projects</h2>
             <div class="row row-cols-md-2 m-auto justify-content-around">
-                <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath" class="col-xxl-3 m-xxl-5 col-md-5 m-md-4 col-11 m-4"/>
+                <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath" :repoUrl="card.repoUrl" class="col-xxl-3 m-xxl-5 col-md-5 m-md-4 col-11 m-4"/>
             </div>
         </div>
 </template>
 
 <script>
-import cardProjeto from './cardProjeto.vue'
+import cardProjeto from './CardProjeto.vue'
 
 export default {
     name: "ProjetosC",
@@ -19,119 +19,148 @@ export default {
         return{
             projetos: [
                 {
-                    titulo: "Food Place",
-                    capaImgPath: "FoodPlace.png",
-                    imgAlt: "Sistema de gerenciamento de pedidos para restaurantes desenvolvido em C# com banco de dados SQL Server, OAuth 2 e API RESTful",
+                    titulo: "RabbitMQ Training",
+                    capaImgPath: "rabbitMqPatterns.png",
+                    imgAlt: "Training given by me about rabbitMQ Patterns",
                     tecImgPath: [
                         "cSharpC.png",
-                        "dockerlogo.png"
-                    ]
+                        "rabbitmq.png",
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/RabbitMQ-Patterns"
                 },
                 {
-                    titulo: "Auto Mapeamento (Ganhador do desafio de inovação Ploomes 2024)",
-                    capaImgPath: "AutoMapeamento.png",
-                    imgAlt: "Sistema para mapeamento de rotas de Web APIs para pattern de excel. Desenvolvido com C# e Vue.js",
+                    titulo: "Card Game",
+                    capaImgPath: "cardGame.png",
+                    imgAlt: "Magic game API with translations and performance",
                     tecImgPath: [
                         "cSharpC.png",
-                        "vueC.png"
-                    ]
+                        "dockerlogo.png",
+                        "redis.png",
+                        "kafka.png",
+                        "sqlserver.png"
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Card-Game"
+                },
+                {
+                    titulo: "Chat GPT Integration",
+                    capaImgPath: "gptIntegration.png",
+                    imgAlt: "Chat API integrated with Chat GPT",
+                    tecImgPath: [
+                        "cSharpC.png",
+                        "dockerlogo.png",
+                        "gptlogo.png",
+                        "postgres.png"
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/GPT-Integration"
+                },
+                {
+                    titulo: "Food Place",
+                    capaImgPath: "FoodPlace.png",
+                    imgAlt: "Order management api system for restaurants",
+                    tecImgPath: [
+                        "cSharpC.png",
+                        "dockerlogo.png",
+                        "sqlserver.png",
+                        "oauth2.png"
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/foodPlace"
+
+                },
+                {
+                    titulo: "Auto Mapeamento (Winner of the Ploomes innovation challenge 2024)",
+                    capaImgPath: "AutoMapeamento.png",
+                    imgAlt: "System for mapping Web API routes to Excel patterns. Developed with C# and Vue.js",
+                    tecImgPath: [
+                        "cSharpC.png",
+                        "vueC.png",
+                        "sqlserver.png"
+                    ],
+                    repoUrl: "https://github.com/matheuszauzamaschietto/Auto-Mapeamento"
                 },
                 {
                     titulo: "I Want",
                     capaImgPath: "IWant.png",
-                    imgAlt: "API com sistema de autenticação OAuth 2 desenvolvida em C# para cadastro de produtos",
+                    imgAlt: "API with OAuth 2 authentication system developed in C# for product registration",
                     tecImgPath: [
-                        "cSharpC.png"
-                    ]
+                        "cSharpC.png",
+                        "sqlserver.png",
+                        "oauth2.png"
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/IWantApp"
                 },
                 {
-                    titulo: "Gerênciador de Tarefas",
+                    titulo: "Task Manager",
                     capaImgPath: "gerenciadorDeTarefas.png",
-                    imgAlt: "API RESTful para gerenciamento de tarefas desenvolvida em node utilizando express, typeorm e Header Auth para autenticação",
+                    imgAlt: "RESTful API for task management developed on node using express, typeorm and Header Auth for authentication",
                     tecImgPath: [
                         "node.png",
                         "dockerlogo.png"
-                    ]
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Gerenciador-de-tarefas-Node"
                 },
                 {
+                    titulo: "My Task",
+                    capaImgPath: "MaringaFrotas.png",
+                    imgAlt: "Web system for productive tasks",
+                    tecImgPath: [
+                        "vueC.png",
+                        "cSharpC.png",
+                        "sqlserver.png",
+                        "oauth2.png"
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/MyTasksAPI"
+                },
+                                {
                     titulo: "Maringá Frotas",
                     capaImgPath: "MaringaFrotas.png",
-                    imgAlt: "Sistema web para gestão de frota de veiculos",
+                    imgAlt: "Web system for vehicle fleet management",
                     tecImgPath: [
                         "vueC.png"
-                    ]
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Maringa-Frotas-Vue"
                 },
                 {
-                    titulo: "Rede Social para Programador",
+                    titulo: "Social Network for Programmers",
                     capaImgPath: "redeSocial.png",
-                    imgAlt: "Rede social com funcionalidades basicas para posts",
+                    imgAlt: "Social network with basic features for posts",
                     tecImgPath: [
                         "vueC.png"
-                    ]
-                },
-                {
-                    titulo: "Filmaria",
-                    capaImgPath: "filmaria.png",
-                    imgAlt: "Site de lançamento de filmes",
-                    tecImgPath: [
-                        "vueC.png"
-                    ]
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Social-Media-with-VUE"
                 },
                 {
                     titulo: "IBGE News",
                     capaImgPath: "IBGEnews.png",
-                    imgAlt: "Centro de notícias do IBGE",
+                    imgAlt: "IBGE news center",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
                         "JS.png"
-                    ]
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Noticias-IBGE"
                 },
                 {
-                    titulo: "Controle de Pedidos",
+                    titulo: "Inventory Manager",
                     capaImgPath: "controleDePedidos.png",
-                    imgAlt: "Site para controle de estoque de items",
+                    imgAlt: "Website for item stock manage",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
                         "JS.png"
-                    ]
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/HtmlCssTIAcademy/tree/main/desafio2/projeto1"
                 },
                 {
-                    titulo: "Me Acha",
+                    titulo: "Search Me",
                     capaImgPath: "MeAcha.png",
-                    imgAlt: "Site busca de CEPs",
+                    imgAlt: "Simple website to get Brazil address informations based on zip code",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
                         "JS.png"
-                    ]
-                },
-                {
-                    titulo: "My Clouth Stock",
-                    capaImgPath: "myClouthStock.png",
-                    imgAlt: "Site para controle de estoque de roupas",
-                    tecImgPath: [
-                        "pythonC.png"
-                    ]
-                },
-                {
-                    titulo: "Downloader de Video do Youtube",
-                    capaImgPath: "youtubeDownloader.png",
-                    imgAlt: "Site para baixar videos e audios do youtube",
-                    tecImgPath: [
-                        "pythonC.png"
-                    ]
-                },
-                {
-                    titulo: "Gerênciador de Estacionamentos",
-                    capaImgPath: "controleDeEstacionamento.png",
-                    imgAlt: "Aplicativo desktop para gerênciar o estacionamento",
-                    tecImgPath: [
-                        "pythonC.png"
-                    ]
-                },
-        
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Me-Acha"
+                }
             ]
         }
     }

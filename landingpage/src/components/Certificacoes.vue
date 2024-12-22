@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span>Certificações </span>
+        <span>Certifications</span>
         <font-awesome-icon icon="fa-solid fa-play" class="icon"/>
     </div>
     
@@ -22,6 +22,7 @@ export default {
     }
     .icon{
         font-size: 16px;
+        margin-left: 10px;
     }
     
 </style>
