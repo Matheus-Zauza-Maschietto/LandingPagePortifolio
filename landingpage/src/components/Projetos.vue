@@ -19,6 +19,19 @@ export default {
         return{
             projetos: [
                 {
+                    titulo: "Biblioteca PDF",
+                    capaImgPath: "bibliotecapdf-1.png",
+                    imgAlt: "Aplicação para gerenciamento e compartilhamento de bliblioteca online.",
+                    tecImgPath: [
+                        "cSharpC.png",
+                        "postgres.png",
+                        "redis.png",
+                        "vueC.png",
+                        "websocket.png",
+                    ],
+                    repoUrl: "https://github.com/Matheus-Zauza-Maschietto/BibliotecaPDF"
+                },
+                {
                     titulo: "Treinamento RabbitMQ",
                     capaImgPath: "rabbitMqPatterns.png",
                     imgAlt: "Treinamento ministrado por mim sobre padrões RabbitMQ",
