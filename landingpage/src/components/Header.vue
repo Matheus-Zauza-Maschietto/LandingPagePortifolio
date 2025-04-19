@@ -7,16 +7,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sobre">About</a>
+                        <a class="nav-link" href="#sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#habilidades">Skills</a>
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projetos">Projects</a>
+                        <a class="nav-link" href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </div>

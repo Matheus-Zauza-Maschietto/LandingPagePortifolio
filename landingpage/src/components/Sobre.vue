@@ -1,26 +1,26 @@
 <template>
   <div id="sobre">
     <div class="col-md-11 p-3 rounded-2 m-md-auto m-2" id="meu-resumo">
-      <h2 class="text-center">About</h2>
+      <h2 class="text-center">Sobre</h2>
       <p class="p-4 text-justify">
-        Born in Loanda (PR), I have always had a strong affinity with
-        mathematics, logic and creativity. I started my studies in programming
-        as a hobby, but as time went by I realized that I would like to have
-        this as my profession. I currently work developing integrations in APIs
-        and databases, using Dotnet. I like chess, reading and I am a
-        science/astronomy enthusiast
+        Nascido em Loanda (PR), sempre tive uma forte afinidade com
+        matemática, lógica e criatividade. Comecei meus estudos em programação
+        como um hobby, mas com o tempo percebi que gostaria de ter
+        isso como minha profissão. Atualmente trabalho desenvolvendo integrações em APIs
+        e bancos de dados, usando Dotnet. Gosto de xadrez, leitura e sou um
+        entusiasta de ciência/astronomia.
       </p>
     </div>
     <div class="row justify-content-around m-2 info-cards">
       <div
         class="col-lg-5 col-11 text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 py-4 rounded-3 brightness"
       >
-        <h3>Personal Details</h3>
+        <h3>Detalhes Pessoais</h3>
         <div
           class="col-lg-9 col-12 m-auto d-flex flex-column justify-content-evenly h-100"
         >
           <div class="d-flex justify-content-between information">
-            <h3>Name</h3>
+            <h3>Nome</h3>
             <span class="w-auto text-end">Matheus Zauza Maschietto</span>
           </div>
           <div class="d-flex justify-content-between information">
@@ -28,42 +28,42 @@
             <span class="w-auto text-end">matheus_maschietto@yahoo.com.br</span>
           </div>
           <div class="d-flex justify-content-between information">
-            <h3>Work experience</h3>
-            <span class="w-auto text-end">3 Years</span>
+            <h3>Experiência Profissional</h3>
+            <span class="w-auto text-end">3 Anos</span>
           </div>
           <div class="d-flex justify-content-between information">
-            <h3>Address</h3>
-            <span class="w-auto text-end">Maringá, PR, Brazil</span>
+            <h3>Endereço</h3>
+            <span class="w-auto text-end">Maringá, PR, Brasil</span>
           </div>
           <div class="d-flex justify-content-between information">
             <h3>Idade</h3>
-            <span class="w-auto text-end">{{ this.calculateAge() }} Years</span>
+            <span class="w-auto text-end">{{ this.calculateAge() }} Anos</span>
           </div>
         </div>
       </div>
       <div
         class="col-lg-5 col-11 d-flex flex-column text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 rounded-3 brightness"
       >
-        <h3>My Roadmap</h3>
+        <h3>Minha Jornada</h3>
         <span class="init-jorney-ball"></span>
         <span class="init-jorney-stick"></span>
-        <p>Beginning of studies in Programming: 2020</p>
+        <p>Início dos estudos em Programação: 2020</p>
         <span class="init-jorney-stick"></span>
-        <p>High School (Completed): 2021</p>
+        <p>Ensino Médio (Concluído): 2021</p>
         <span class="init-jorney-stick"></span>
-        <p>College (Beginning): 2022</p>
+        <p>Faculdade (Início): 2022</p>
         <span class="init-jorney-stick"></span>
-        <p>HackaTruck: May, 2022</p>
+        <p>HackaTruck: Maio, 2022</p>
         <span class="init-jorney-stick"></span>
-        <p>Trainee Developer: September, 2022</p>
+        <p>Desenvolvedor Estagiário: Setembro, 2022</p>
         <span class="init-jorney-stick"></span>
-        <p>Junior Developer, 2023</p>
+        <p>Desenvolvedor Júnior, 2023</p>
         <span class="init-jorney-stick"></span>
-        <p>Hackathon InovaAgro 3st place: May, 2023</p>
+        <p>Hackathon InovaAgro 3º lugar: Maio, 2023</p>
         <span class="init-jorney-stick"></span>
-        <p>Ploomes Innovation Challenge 1st place: March, 2024</p>
+        <p>Ploomes Innovation Challenge 1º lugar: Março, 2024</p>
         <span class="init-jorney-stick"></span>
-        <p>Middle Developer: Agosto, 2024</p>
+        <p>Desenvolvedor Pleno: Agosto, 2024</p>
       </div>
     </div>
   </div>

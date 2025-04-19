@@ -1,16 +1,16 @@
 <template>
     <div id="habilidades" class="text-center">
-        <h2 class="m-4">Skills</h2>
+        <h2 class="m-4">Habilidades</h2>
         <div class="row justify-content-around m-1">
             <div class="col-lg-6">
-                <h3 class="m-4">Hard Skills</h3>
+                <h3 class="m-4">Habilidades Técnicas</h3>
                 <div class="skills p-4 rounded-3">
                     <ul class="hard-skills p-0">
                         <li>
                             <h4>.Net/C#</h4>
                             <ProgressBar loading="90" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="dotnetModalOpen = !dotnetModalOpen; stopScroll()" />
-                            <ModalComponent title="Certifications .Net/C#" :open="dotnetModalOpen"
+                            <ModalComponent title="Certificações .Net/C#" :open="dotnetModalOpen"
                                 @close="dotnetModalOpen = !dotnetModalOpen; initScroll()" :contents="[
                                 {
                                     title: 'C# COMPLETO Programação Orientada a Objetos + Projetos',
@@ -42,10 +42,10 @@
                             <h4>Redis</h4>
                             <ProgressBar loading="70" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="redisModalOpen = !redisModalOpen; stopScroll()" />
-                            <ModalComponent title="Certifications Redis" :open="redisModalOpen"
+                            <ModalComponent title="Certificações Redis" :open="redisModalOpen"
                                 @close="redisModalOpen = !redisModalOpen; initScroll()" :contents="[
                                     {
-                                        title: 'Self-taught Development',
+                                        title: 'Desenvolvimento Autodidata',
                                         time: '2024'
                                     }
                             ]" />
@@ -54,26 +54,26 @@
                             <h4>RabbitMQ</h4>
                             <ProgressBar loading="75" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="rabbitmqModalOpen = !rabbitmqModalOpen; stopScroll()"/>
-                            <ModalComponent title="Certifications Typescript" :open="rabbitmqModalOpen"
+                            <ModalComponent title="Certificações RabbitMQ" :open="rabbitmqModalOpen"
                                 @close="rabbitmqModalOpen = !rabbitmqModalOpen; initScroll()" :contents="[
                                     {
-                                        title: 'Self-taught Development',
+                                        title: 'Desenvolvimento Autodidata',
                                         time: '2024'
                                     },
                                     {
-                                        title: 'Work Experience',
+                                        title: 'Experiência Profissional',
                                         time: '2023'
                                     },
                             ]" />
                         </li>
                         <li>
                             <h4>Docker/Kubernetes</h4>
-                            <ProgressBar loading="75" type="bg-warning" height="20px" width="400px" />
+                            <ProgressBar loading="65" type="bg-warning" height="20px" width="400px" />
                             <Certificacoes @click="kubernetesModalOpen = !kubernetesModalOpen; stopScroll()"/>
-                            <ModalComponent title="Certifications Docker/Kubernetes" :open="kubernetesModalOpen"
+                            <ModalComponent title="Certificações Docker/Kubernetes" :open="kubernetesModalOpen"
                                 @close="kubernetesModalOpen = !kubernetesModalOpen; initScroll()" :contents="[
                                 {
-                                    title: 'Self-taught Development',
+                                    title: 'Desenvolvimento Autodidata',
                                     time: '2024'
                                 },
                                 {
@@ -81,7 +81,7 @@
                                     time: '2024'
                                 },
                                 {
-                                    title: 'Work Experience',
+                                    title: 'Experiência Profissional',
                                     time: '2024'
                                 },
                             ]" />
@@ -90,27 +90,27 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h3 class="m-4">Soft Skills</h3>
+                <h3 class="m-4">Habilidades Comportamentais</h3>
                 <div class="skills p-4 rounded-3 col-12">
                     <ul class="soft-skills p-0">
                         <li>
-                            <h4>Logic</h4>
+                            <h4>Lógica</h4>
                             <ProgressBar loading="90" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Troubleshooting</h4>
+                            <h4>Resolução de Problemas</h4>
                             <ProgressBar loading="80" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Cooperation</h4>
+                            <h4>Cooperação</h4>
                             <ProgressBar loading="75" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Creativity</h4>
+                            <h4>Criatividade</h4>
                             <ProgressBar loading="85" type="bg-success" height="20px" width="400px" />
                         </li>
                         <li>
-                            <h4>Leadership</h4>
+                            <h4>Liderança</h4>
                             <ProgressBar loading="70" type="bg-success" height="20px" width="400px" />
                         </li>
                     </ul>

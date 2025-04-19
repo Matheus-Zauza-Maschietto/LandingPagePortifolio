@@ -10,7 +10,7 @@
         />
       </div>
       <div class="desc col-12 h-25">
-        <span>Tech Stack</span>
+        <span>Tecnologias Utilizadas</span>
         <div class="d-flex justify-content-center">
           <div>
             <img

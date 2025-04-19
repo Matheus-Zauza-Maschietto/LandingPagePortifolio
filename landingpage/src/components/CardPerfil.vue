@@ -5,10 +5,10 @@
         </div>
         <div class="card-body ">
             <h5 class="card-title">Matheus Zauza Maschietto</h5>
-            <p class="card-text">Backend Developer</p>
+            <p class="card-text">Desenvolvedor Backend</p>
         </div>
         <div>
-            <a href="https://www.linkedin.com/in/matheus-maschietto-ab9540215/" rel="author" target="_blank">
+            <a href="https://www.linkedin.com/in/matheus-zauza-maschietto-ab9540215/" rel="author" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-linkedin" class="icon p-3"/>
             </a>
             <a href="https://github.com/Matheus-Zauza-Maschietto" rel="author" target="_blank"> 

@@ -1,6 +1,6 @@
 <template>
         <div class="text-center" id="projetos">
-            <h2>My Projects</h2>
+            <h2>Meus Projetos</h2>
             <div class="row row-cols-md-2 m-auto justify-content-around">
                 <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath" :repoUrl="card.repoUrl" class="col-xxl-3 m-xxl-5 col-md-5 m-md-4 col-11 m-4"/>
             </div>
@@ -19,9 +19,9 @@ export default {
         return{
             projetos: [
                 {
-                    titulo: "RabbitMQ Training",
+                    titulo: "Treinamento RabbitMQ",
                     capaImgPath: "rabbitMqPatterns.png",
-                    imgAlt: "Training given by me about rabbitMQ Patterns",
+                    imgAlt: "Treinamento ministrado por mim sobre padrões RabbitMQ",
                     tecImgPath: [
                         "cSharpC.png",
                         "rabbitmq.png",
@@ -29,9 +29,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/RabbitMQ-Patterns"
                 },
                 {
-                    titulo: "Card Game",
+                    titulo: "Jogo de Cartas",
                     capaImgPath: "cardGame.png",
-                    imgAlt: "Magic game API with translations and performance",
+                    imgAlt: "API de jogo de cartas com traduções e performance",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -42,9 +42,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Card-Game"
                 },
                 {
-                    titulo: "Chat GPT Integration",
+                    titulo: "Integração Chat GPT",
                     capaImgPath: "gptIntegration.png",
-                    imgAlt: "Chat API integrated with Chat GPT",
+                    imgAlt: "API de chat integrada com Chat GPT",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -56,7 +56,7 @@ export default {
                 {
                     titulo: "Food Place",
                     capaImgPath: "FoodPlace.png",
-                    imgAlt: "Order management api system for restaurants",
+                    imgAlt: "Sistema de API para gerenciamento de pedidos de restaurantes",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -67,9 +67,9 @@ export default {
 
                 },
                 {
-                    titulo: "Auto Mapeamento (Winner of the Ploomes innovation challenge 2024)",
+                    titulo: "Auto Mapeamento (Vencedor do desafio de inovação Ploomes 2024)",
                     capaImgPath: "AutoMapeamento.png",
-                    imgAlt: "System for mapping Web API routes to Excel patterns. Developed with C# and Vue.js",
+                    imgAlt: "Sistema para mapeamento de rotas de Web API para padrões Excel. Desenvolvido com C# e Vue.js",
                     tecImgPath: [
                         "cSharpC.png",
                         "vueC.png",
@@ -80,7 +80,7 @@ export default {
                 {
                     titulo: "I Want",
                     capaImgPath: "IWant.png",
-                    imgAlt: "API with OAuth 2 authentication system developed in C# for product registration",
+                    imgAlt: "API com sistema de autenticação OAuth 2 desenvolvida em C# para cadastro de produtos",
                     tecImgPath: [
                         "cSharpC.png",
                         "sqlserver.png",
@@ -89,9 +89,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/IWantApp"
                 },
                 {
-                    titulo: "Task Manager",
+                    titulo: "Gerenciador de Tarefas",
                     capaImgPath: "gerenciadorDeTarefas.png",
-                    imgAlt: "RESTful API for task management developed on node using express, typeorm and Header Auth for authentication",
+                    imgAlt: "API RESTful para gerenciamento de tarefas desenvolvida em node usando express, typeorm e Header Auth para autenticação",
                     tecImgPath: [
                         "node.png",
                         "dockerlogo.png"
@@ -99,9 +99,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Gerenciador-de-tarefas-Node"
                 },
                 {
-                    titulo: "My Task",
+                    titulo: "Minhas Tarefas",
                     capaImgPath: "MaringaFrotas.png",
-                    imgAlt: "Web system for productive tasks",
+                    imgAlt: "Sistema web para tarefas produtivas",
                     tecImgPath: [
                         "vueC.png",
                         "cSharpC.png",
@@ -110,28 +110,28 @@ export default {
                     ],
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/MyTasksAPI"
                 },
-                                {
+                {
                     titulo: "Maringá Frotas",
                     capaImgPath: "MaringaFrotas.png",
-                    imgAlt: "Web system for vehicle fleet management",
+                    imgAlt: "Sistema web para gerenciamento de frota de veículos",
                     tecImgPath: [
                         "vueC.png"
                     ],
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Maringa-Frotas-Vue"
                 },
                 {
-                    titulo: "Social Network for Programmers",
+                    titulo: "Rede Social para Programadores",
                     capaImgPath: "redeSocial.png",
-                    imgAlt: "Social network with basic features for posts",
+                    imgAlt: "Rede social com funcionalidades básicas para posts",
                     tecImgPath: [
                         "vueC.png"
                     ],
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Social-Media-with-VUE"
                 },
                 {
-                    titulo: "IBGE News",
+                    titulo: "Notícias IBGE",
                     capaImgPath: "IBGEnews.png",
-                    imgAlt: "IBGE news center",
+                    imgAlt: "Centro de notícias do IBGE",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
@@ -140,9 +140,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Noticias-IBGE"
                 },
                 {
-                    titulo: "Inventory Manager",
+                    titulo: "Gerenciador de Estoque",
                     capaImgPath: "controleDePedidos.png",
-                    imgAlt: "Website for item stock manage",
+                    imgAlt: "Website para gerenciamento de estoque de itens",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
@@ -151,9 +151,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/HtmlCssTIAcademy/tree/main/desafio2/projeto1"
                 },
                 {
-                    titulo: "Search Me",
+                    titulo: "Me Acha",
                     capaImgPath: "MeAcha.png",
-                    imgAlt: "Simple website to get Brazil address informations based on zip code",
+                    imgAlt: "Website simples para obter informações de endereços brasileiros baseado no CEP",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
