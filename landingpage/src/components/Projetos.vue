@@ -1,8 +1,8 @@
 <template>
-        <div class="text-center" id="projetos">
-            <h2>Meus Projetos</h2>
+        <div class="text-center" id="projects">
+            <h2>My Projects</h2>
             <div class="row row-cols-md-2 m-auto justify-content-around">
-                <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath" :repoUrl="card.repoUrl" class="col-xxl-3 m-xxl-5 col-md-5 m-md-4 col-11 m-4"/>
+                <cardProjeto v-for="(card, index) in projetos" :key="index" :titulo="card.titulo" :capaImgPath="card.capaImgPath" :tecImgPath="card.tecImgPath" :repoUrl="card.repoUrl" :descricao="card.imgAlt" class="col-xxl-3 m-xxl-5 col-md-5 m-md-4 col-11 m-4"/>
             </div>
         </div>
 </template>
@@ -19,9 +19,9 @@ export default {
         return{
             projetos: [
                 {
-                    titulo: "Biblioteca PDF",
+                    titulo: "PDF Library",
                     capaImgPath: "bibliotecapdf-1.png",
-                    imgAlt: "Aplicação para gerenciamento e compartilhamento de bliblioteca online.",
+                    imgAlt: "Application for managing and sharing an online library.",
                     tecImgPath: [
                         "cSharpC.png",
                         "postgres.png",
@@ -32,9 +32,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/BibliotecaPDF"
                 },
                 {
-                    titulo: "Treinamento RabbitMQ",
+                    titulo: "RabbitMQ Training",
                     capaImgPath: "rabbitMqPatterns.png",
-                    imgAlt: "Treinamento ministrado por mim sobre padrões RabbitMQ",
+                    imgAlt: "Training I delivered on RabbitMQ messaging patterns",
                     tecImgPath: [
                         "cSharpC.png",
                         "rabbitmq.png",
@@ -42,9 +42,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/RabbitMQ-Patterns"
                 },
                 {
-                    titulo: "Jogo de Cartas",
+                    titulo: "Card Game",
                     capaImgPath: "cardGame.png",
-                    imgAlt: "API de jogo de cartas com traduções e performance",
+                    imgAlt: "Card game API focused on translations and performance",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -55,9 +55,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Card-Game"
                 },
                 {
-                    titulo: "Integração Chat GPT",
+                    titulo: "ChatGPT Integration",
                     capaImgPath: "gptIntegration.png",
-                    imgAlt: "API de chat integrada com Chat GPT",
+                    imgAlt: "Chat API integrated with ChatGPT",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -69,7 +69,7 @@ export default {
                 {
                     titulo: "Food Place",
                     capaImgPath: "FoodPlace.png",
-                    imgAlt: "Sistema de API para gerenciamento de pedidos de restaurantes",
+                    imgAlt: "API system for managing restaurant orders",
                     tecImgPath: [
                         "cSharpC.png",
                         "dockerlogo.png",
@@ -80,9 +80,9 @@ export default {
 
                 },
                 {
-                    titulo: "Auto Mapeamento (Vencedor do desafio de inovação Ploomes 2024)",
+                    titulo: "Auto Mapping (Winner of the Ploomes Innovation Hackathon 2024)",
                     capaImgPath: "AutoMapeamento.png",
-                    imgAlt: "Sistema para mapeamento de rotas de Web API para padrões Excel. Desenvolvido com C# e Vue.js",
+                    imgAlt: "System for mapping Web API routes to Excel templates. Built with C# and Vue.js",
                     tecImgPath: [
                         "cSharpC.png",
                         "vueC.png",
@@ -93,7 +93,7 @@ export default {
                 {
                     titulo: "I Want",
                     capaImgPath: "IWant.png",
-                    imgAlt: "API com sistema de autenticação OAuth 2 desenvolvida em C# para cadastro de produtos",
+                    imgAlt: "Product registration API built in C# with OAuth 2 authentication",
                     tecImgPath: [
                         "cSharpC.png",
                         "sqlserver.png",
@@ -102,9 +102,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/IWantApp"
                 },
                 {
-                    titulo: "Gerenciador de Tarefas",
+                    titulo: "Task Manager",
                     capaImgPath: "gerenciadorDeTarefas.png",
-                    imgAlt: "API RESTful para gerenciamento de tarefas desenvolvida em node usando express, typeorm e Header Auth para autenticação",
+                    imgAlt: "RESTful task management API built with Node.js, Express, TypeORM and header-based authentication",
                     tecImgPath: [
                         "node.png",
                         "dockerlogo.png"
@@ -112,9 +112,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Gerenciador-de-tarefas-Node"
                 },
                 {
-                    titulo: "Minhas Tarefas",
+                    titulo: "My Tasks",
                     capaImgPath: "MaringaFrotas.png",
-                    imgAlt: "Sistema web para tarefas produtivas",
+                    imgAlt: "Web platform for productivity tasks, later adopted for internal use at Benner",
                     tecImgPath: [
                         "vueC.png",
                         "cSharpC.png",
@@ -124,27 +124,27 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/MyTasksAPI"
                 },
                 {
-                    titulo: "Maringá Frotas",
+                    titulo: "Maringá Fleet",
                     capaImgPath: "MaringaFrotas.png",
-                    imgAlt: "Sistema web para gerenciamento de frota de veículos",
+                    imgAlt: "Web system for vehicle fleet management",
                     tecImgPath: [
                         "vueC.png"
                     ],
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Maringa-Frotas-Vue"
                 },
                 {
-                    titulo: "Rede Social para Programadores",
+                    titulo: "Social Network for Developers",
                     capaImgPath: "redeSocial.png",
-                    imgAlt: "Rede social com funcionalidades básicas para posts",
+                    imgAlt: "Social network with basic posting features",
                     tecImgPath: [
                         "vueC.png"
                     ],
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Social-Media-with-VUE"
                 },
                 {
-                    titulo: "Notícias IBGE",
+                    titulo: "IBGE News",
                     capaImgPath: "IBGEnews.png",
-                    imgAlt: "Centro de notícias do IBGE",
+                    imgAlt: "News hub consuming the IBGE (Brazilian Institute of Geography and Statistics) API",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
@@ -153,9 +153,9 @@ export default {
                     repoUrl: "https://github.com/Matheus-Zauza-Maschietto/Noticias-IBGE"
                 },
                 {
-                    titulo: "Gerenciador de Estoque",
+                    titulo: "Inventory Manager",
                     capaImgPath: "controleDePedidos.png",
-                    imgAlt: "Website para gerenciamento de estoque de itens",
+                    imgAlt: "Website for managing item inventory",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",
@@ -166,7 +166,7 @@ export default {
                 {
                     titulo: "Me Acha",
                     capaImgPath: "MeAcha.png",
-                    imgAlt: "Website simples para obter informações de endereços brasileiros baseado no CEP",
+                    imgAlt: "Simple website to look up Brazilian addresses by postal code (CEP)",
                     tecImgPath: [
                         "HTML5.png",
                         "CSS3.png",

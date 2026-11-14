@@ -1,16 +1,16 @@
 <template>
   <div class="board brightness projeto m-4">
-    <a :href="repoUrl" target="_blank">
+    <a :href="repoUrl" target="_blank" :title="descricao">
       <div class="capa col-12 h-75">
         <h3 class="m-1">{{ titulo }}</h3>
         <img
           :src="require(`@/assets/projetos/${capaImgPath}`)"
           class="col-11 img-fluid"
-          alt=""
+          :alt="descricao || titulo"
         />
       </div>
       <div class="desc col-12 h-25">
-        <span>Tecnologias Utilizadas</span>
+        <span>Tech Stack</span>
         <div class="d-flex justify-content-center">
           <div>
             <img
@@ -18,6 +18,7 @@
               :key="index"
               :src="require(`@/assets/logos/${img}`)"
               class="icon-img m-2"
+              :alt="img.replace(/C?\.png$/, '')"
             />
           </div>
         </div>
@@ -28,7 +29,7 @@
 
 <script>
 export default {
-  name: "cardPerfil",
+  name: "cardProjeto",
   props: {
     titulo: {
       type: String,
@@ -43,6 +44,10 @@ export default {
       required: true,
     },
     repoUrl: {
+      type: String,
+      required: false,
+    },
+    descricao: {
       type: String,
       required: false,
     },

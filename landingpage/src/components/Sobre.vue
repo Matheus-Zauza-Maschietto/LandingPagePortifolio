@@ -1,69 +1,44 @@
 <template>
-  <div id="sobre">
-    <div class="col-md-11 p-3 rounded-2 m-md-auto m-2" id="meu-resumo">
-      <h2 class="text-center">Sobre</h2>
+  <div id="about">
+    <div class="col-md-11 p-3 rounded-2 m-md-auto m-2" id="my-summary">
+      <h2 class="text-center">About</h2>
       <p class="p-4 text-justify">
-        Nascido em Loanda (PR), sempre tive uma forte afinidade com
-        matemática, lógica e criatividade. Comecei meus estudos em programação
-        como um hobby, mas com o tempo percebi que gostaria de ter
-        isso como minha profissão. Atualmente trabalho desenvolvendo integrações em APIs
-        e bancos de dados, usando Dotnet. Gosto de xadrez, leitura e sou um
-        entusiasta de ciência/astronomia.
+        I'm a Mid-Level Software Engineer from Brazil, focused on back-end development
+        with C# / .NET and distributed systems. Born in Loanda (PR), I've always had a
+        strong affinity for mathematics, logic and creativity. I started programming as
+        a hobby and soon realized I wanted it to be my profession. Today I design and
+        build scalable microservices and enterprise integrations, working with messaging
+        (RabbitMQ and Azure Service Bus), caching with Redis, distributed locks,
+        relational databases and containerized environments with Docker and Kubernetes.
+        I also enjoy sharing knowledge: I've delivered internal training sessions on
+        topics such as RabbitMQ, Redis, WebSockets, distributed locks, unit testing and
+        AI-assisted development with Claude Code. Outside of work, I enjoy chess, reading,
+        and I'm a science and astronomy enthusiast.
       </p>
     </div>
     <div class="row justify-content-around m-2 info-cards">
       <div
         class="col-lg-5 col-11 text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 py-4 rounded-3 brightness"
       >
-        <h3>Detalhes Pessoais</h3>
+        <h3>Personal Details</h3>
         <div
           class="col-lg-9 col-12 m-auto d-flex flex-column justify-content-evenly h-100"
         >
-          <div class="d-flex justify-content-between information">
-            <h3>Nome</h3>
-            <span class="w-auto text-end">Matheus Zauza Maschietto</span>
-          </div>
-          <div class="d-flex justify-content-between information">
-            <h3>E-mail</h3>
-            <span class="w-auto text-end">matheus_maschietto@yahoo.com.br</span>
-          </div>
-          <div class="d-flex justify-content-between information">
-            <h3>Experiência Profissional</h3>
-            <span class="w-auto text-end">3 Anos</span>
-          </div>
-          <div class="d-flex justify-content-between information">
-            <h3>Endereço</h3>
-            <span class="w-auto text-end">Maringá, PR, Brasil</span>
-          </div>
-          <div class="d-flex justify-content-between information">
-            <h3>Idade</h3>
-            <span class="w-auto text-end">{{ this.calculateAge() }} Anos</span>
+          <div class="d-flex justify-content-between information" v-for="detail in details" :key="detail.label">
+            <h3>{{ detail.label }}</h3>
+            <span class="w-auto text-end">{{ detail.value }}</span>
           </div>
         </div>
       </div>
       <div
         class="col-lg-5 col-11 d-flex flex-column text-center m-lg-5 m-md-4 p-md-4 p-2 mx-auto my-3 rounded-3 brightness"
       >
-        <h3>Minha Jornada</h3>
+        <h3>My Journey</h3>
         <span class="init-jorney-ball"></span>
-        <span class="init-jorney-stick"></span>
-        <p>Início dos estudos em Programação: 2020</p>
-        <span class="init-jorney-stick"></span>
-        <p>Ensino Médio (Concluído): 2021</p>
-        <span class="init-jorney-stick"></span>
-        <p>Faculdade (Início): 2022</p>
-        <span class="init-jorney-stick"></span>
-        <p>HackaTruck: Maio, 2022</p>
-        <span class="init-jorney-stick"></span>
-        <p>Desenvolvedor Estagiário: Setembro, 2022</p>
-        <span class="init-jorney-stick"></span>
-        <p>Desenvolvedor Júnior, 2023</p>
-        <span class="init-jorney-stick"></span>
-        <p>Hackathon InovaAgro 3º lugar: Maio, 2023</p>
-        <span class="init-jorney-stick"></span>
-        <p>Ploomes Innovation Challenge 1º lugar: Março, 2024</p>
-        <span class="init-jorney-stick"></span>
-        <p>Desenvolvedor Pleno: Agosto, 2024</p>
+        <template v-for="(step, index) in journey" :key="index">
+          <span class="init-jorney-stick"></span>
+          <p>{{ step }}</p>
+        </template>
       </div>
     </div>
   </div>
@@ -72,20 +47,51 @@
 <script>
 export default {
   name: "SobreC",
+  data() {
+    return {
+      journey: [
+        "Started studying programming: 2020",
+        "High school (completed): 2021",
+        "Bachelor of Software Engineering, Unicesumar (start): February 2022",
+        "HackaTruck: May 2022",
+        "Software Engineering Trainee, Benner: September 2022",
+        "Junior Software Engineer, Benner: February 2023",
+        "Inovagro Hackathon, 3rd place: May 2023",
+        "Junior Software Engineer, Ploomes: September 2023",
+        "Ploomes Internal Innovation Hackathon, 1st place: March 2024",
+        "Mid-Level Software Engineer, Ploomes: August 2024",
+        "Mid-Level Software Engineer, AmbevTech: July 2025",
+        "Bachelor of Software Engineering (completed): December 2025",
+        "Postgraduate in Software Architecture, FIAP (start): March 2026",
+        "Selected for the 16th Startup Acceleration Batch at EVOA by Thronos: 2026",
+      ],
+    };
+  },
+  computed: {
+    details() {
+      return [
+        { label: "Name", value: "Matheus Zauza Maschietto" },
+        { label: "E-mail", value: "matheus_maschietto@yahoo.com.br" },
+        { label: "Professional Experience", value: `${this.yearsSince(new Date(2022, 8, 1))}+ Years` },
+        { label: "Location", value: "Maringá, PR, Brazil" },
+        { label: "Age", value: `${this.yearsSince(new Date(2004, 1, 10))} Years` },
+        { label: "Languages", value: "Portuguese (Native), English (Advanced)" },
+      ];
+    },
+  },
   methods: {
-    calculateAge() {
-      const bithday = new Date(2004, 1, 10);
+    yearsSince(startDate) {
       const actualDate = new Date();
 
-      let years = actualDate.getFullYear() - bithday.getFullYear();
+      let years = actualDate.getFullYear() - startDate.getFullYear();
 
       const actualMonth = actualDate.getMonth();
       const actualDay = actualDate.getDate();
 
       if (
-        actualMonth < bithday.getMonth() ||
-        (actualMonth === bithday.getMonth() &&
-          actualDay < bithday.getDate())
+        actualMonth < startDate.getMonth() ||
+        (actualMonth === startDate.getMonth() &&
+          actualDay < startDate.getDate())
       ) {
         years--;
       }
@@ -101,12 +107,12 @@ export default {
   box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.1);
 }
 
-#sobre {
+#about {
   color: white;
   font-size: 20px;
 }
 
-#meu-resumo {
+#my-summary {
   background: #3a3a3a;
 }
 
@@ -152,6 +158,7 @@ p {
 
 .information {
   flex-wrap: wrap;
+  gap: 0 12px;
 }
 
 .brightness > p,
